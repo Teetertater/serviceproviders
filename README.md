@@ -17,6 +17,7 @@ python manage.py runserver
 To create a provider: 
 POST http://localhost:8000/api/service_provider/ 
 body:
+
 '''json
 {
 	"name": "name",
@@ -33,6 +34,7 @@ http://localhost:8000/api/service_provider/n    (n is provider id, e.g 1)
 To create a service area for a particular provider:
 POST http://localhost:8000/api/service_area/
 body:
+
 '''json
 {
 	"name": "sa_name",

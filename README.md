@@ -3,12 +3,12 @@
 CRUD for service providers and their corresponding service areas. 
 
 Prerequisites:
--Python 2.7
--Postgres with postgis 2.4
--Django 2.0+
--django-phonenumber-field
--django-money
--django-language-field
+* Python 2.7
+* Postgres with postgis 2.4
+* Django 2.0+
+* django-phonenumber-field
+* django-money
+* django-language-field
 
 ## To start server:
 python manage.py runserver

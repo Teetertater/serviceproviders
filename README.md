@@ -15,7 +15,9 @@ python manage.py runserver
 
 ## Query API (Tested with Postman)
 To create a provider: 
+
 POST http://localhost:8000/api/service_provider/ 
+
 body:
 
 ```json
@@ -29,10 +31,14 @@ body:
 ```
 
 To retrieve a provider:
+
 http://localhost:8000/api/service_provider/n    (n is provider id, e.g 1)
 
+
 To create a service area for a particular provider:
+
 POST http://localhost:8000/api/service_area/
+
 body:
 
 ```son

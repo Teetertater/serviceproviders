@@ -18,7 +18,7 @@ To create a provider:
 POST http://localhost:8000/api/service_provider/ 
 body:
 
-'''json
+```json
 {
 	"name": "name",
 	"email": "valid@email.com",
@@ -26,7 +26,7 @@ body:
 	"language": "en",
 	"currency": "USD"
 }
-'''
+```
 
 To retrieve a provider:
 http://localhost:8000/api/service_provider/n    (n is provider id, e.g 1)
@@ -35,12 +35,12 @@ To create a service area for a particular provider:
 POST http://localhost:8000/api/service_area/
 body:
 
-'''json
+```son
 {
 	"name": "sa_name",
 	"provider": "name",
 	"price": "decimal",
 	"area": "POLYGON((0 0, 1 1, 2 2))"
 }
-'''
+```
 

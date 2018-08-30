@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '%9fht@_7e26g@!v^(+!0uw_d(%jccu3*x+6^c!c4h+uw&j5)a#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mozio.swwqqdi2nw.us-west-2.elasticbeanstalk.com']
 
 
 # Application definition

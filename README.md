@@ -2,13 +2,7 @@
 
 CRUD for service providers and their corresponding service areas. 
 
-Prerequisites:
-* Python 2.7
-* Postgres with postgis 2.4
-* Django 2.0+
-* django-phonenumber-field
-* django-money
-* django-language-field
+Please see requirements.txt for prerequisites.
 
 ## To start server:
 python manage.py runserver
@@ -29,14 +23,14 @@ body:
 ```
 
 To retrieve a provider:
-http://localhost:8000/api/service_provider/n    (n is provider id, e.g 1)
+http://localhost:8000/api/service_providers/n    (optional: n is provider id, e.g 1)
 
 
 To create a service area for a particular provider:
-POST http://localhost:8000/api/service_area/
+POST http://localhost:8000/api/service_areas/
 body:
 
-```son
+```json
 {
 	"name": "sa_name",
 	"provider": "name",
@@ -44,4 +38,9 @@ body:
 	"area": "POLYGON((0 0, 1 1, 2 2))"
 }
 ```
+
+To view all services areas which contain a particular point:
+http://localhost:8000/api/service_areas_about_point/?point=lat,long   
+(latitude and longtitude separated by comma)
+
 

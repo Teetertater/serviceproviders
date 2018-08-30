@@ -6,13 +6,16 @@ The `urlpatterns` list routes URLs to views. For more information please see:
 
 from django.conf.urls import url, include
 from django.contrib import admin
-from api.resources import ServiceProviderResource, ServiceAreaResource
+from rest_framework.routers import SimpleRouter
 
-service_provider = ServiceProviderResource()
-service_area = ServiceAreaResource()
+from api.resources import ServiceProviderResource, ServiceAreaResource, ServiceAreasOnPoint
+
+router = SimpleRouter()
+router.register('service_providers', ServiceProviderResource, 'provider')
+router.register('service_areas', ServiceAreaResource, 'service_area')
+router.register('service_areas_about_point', ServiceAreasOnPoint, 'return_sa')
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^api/', include(service_provider.urls)),
-    url(r'^api/', include(service_area.urls)),
+    url(r'^api/', include(router.urls)),
 ]

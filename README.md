@@ -1,4 +1,4 @@
-## Django REST API using tastypie and postgres (postgis)
+## Django REST API using Django REST and postgres (postgis)
 
 CRUD for service providers and their corresponding service areas. 
 

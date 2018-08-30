@@ -8,8 +8,8 @@ Please see requirements.txt for prerequisites.
 python manage.py runserver
 
 ## Query API (Tested with Postman)
-To create a provider: 
-POST http://localhost:8000/api/service_provider/ 
+To create a provider:   
+POST http://localhost:8000/api/service_provider/   
 body:
 
 ```json
@@ -22,12 +22,13 @@ body:
 }
 ```
 
-To retrieve a provider:
-http://localhost:8000/api/service_providers/n    (optional: n is provider id, e.g 1)
+To retrieve a provider:  
+http://localhost:8000/api/service_providers/n     
+(optional: n is provider id, e.g 1)
 
 
-To create a service area for a particular provider:
-POST http://localhost:8000/api/service_areas/
+To create a service area for a particular provider:  
+POST http://localhost:8000/api/service_areas/  
 body:
 
 ```json
@@ -39,8 +40,8 @@ body:
 }
 ```
 
-To view all services areas which contain a particular point:
-http://localhost:8000/api/service_areas_about_point/?point=lat,long   
+To view all services areas which contain a particular point:  
+http://localhost:8000/api/service_areas_about_point/?point=lat,long     
 (latitude and longtitude separated by comma)
 
 
